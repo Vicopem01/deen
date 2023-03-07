@@ -1,9 +1,12 @@
 import Burger from "@/public/hamburger.svg";
+import Logo from "@/public/logo-red.svg";
 
 const Header = ({ serviceRef, footerRef, headerRef }) => {
   return (
     <header className="flex justify-between mt-s4" ref={headerRef}>
-      <div>DEEN</div>
+      <div>
+        <Logo />
+      </div>
       <div className="hidden lg:inline-block">
         <button className="hover:underline">Home</button>
         <button
