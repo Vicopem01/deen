@@ -3,8 +3,13 @@ import Header from "../components/UI/Header";
 import Truck from "@/public/truck.png";
 import Truckicon from "@/public/truck.svg";
 import Footer from "@/components/UI/Footer";
+import { useRef } from "react";
 
 const Landing = () => {
+  const serviceRef = useRef(null);
+  const footerRef = useRef(null);
+  const headerRef = useRef(null);
+
   const SERVICES = [
     {
       title: "Logistics",
@@ -28,14 +33,18 @@ const Landing = () => {
     <>
       <main className="text-white">
         {/* header */}
-        <Header />
+        <Header
+          serviceRef={serviceRef}
+          footerRef={footerRef}
+          headerRef={headerRef}
+        />
         <h1 className="text-4xl md:text-7xl lg:text-9xl text-center font-semibold mb-s6 mt-s11">
           Grow your business, we will take care of your
           <span className="text-red"> Logistics and Haulage</span>
         </h1>
         <Image src={Truck} alt="Logistics" />
         {/* services */}
-        <section id="services" className="flex mt-s23 lg:flex-row flex-col">
+        <section className="flex mt-s23 lg:flex-row flex-col" ref={serviceRef}>
           <div className="lg:w-2/6 w-full">
             <p className="font-bold text-lg">OUR SERVICES</p>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold mt-s1 mb-s3">
@@ -79,7 +88,11 @@ const Landing = () => {
         </section>
         {/* footer */}
       </main>
-      <Footer />
+      <Footer
+        footerRef={footerRef}
+        headerRef={headerRef}
+        serviceRef={serviceRef}
+      />
     </>
   );
 };

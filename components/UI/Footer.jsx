@@ -5,9 +5,9 @@ import Mail from "@/public/mail.svg";
 import Phone from "@/public/phone.svg";
 import Logo from "@/public/logo-white.svg";
 
-const Footer = () => {
+const Footer = ({ footerRef, headerRef, serviceRef }) => {
   return (
-    <footer className="bg-red pt-s9 pb-s7">
+    <footer className="bg-red pt-s9 pb-s7" ref={footerRef}>
       <div className="w-[85%] mx-auto">
         <div className="footer-grid mx-auto">
           <div>
@@ -22,19 +22,29 @@ const Footer = () => {
           </div>
           <div>
             <p className="font-semibold text-lg text-white mb-s2">Company</p>
-            <a className="block text-white-100 flex items-center">Home</a>
-            <a
-              href="#services"
+            <button
+              className="block text-white-100 flex items-center"
+              onClick={() =>
+                headerRef.current.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
+              Home
+            </button>
+            <button
               className="block text-white-100 flex items-center my-s2"
+              onClick={() =>
+                serviceRef.current.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
             >
               Services
-            </a>
-            <a
-              href="#contact"
-              className="block text-white-100 flex items-center"
-            >
+            </button>
+            <button className="block text-white-100 flex items-center">
               Contact
-            </a>
+            </button>
           </div>
           <div>
             <p className="font-semibold text-lg text-white mb-s2">Follow Us</p>
