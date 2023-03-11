@@ -1,54 +1,51 @@
 import Image from "next/image";
 import Header from "../components/UI/Header";
-import Truck from "@/public/truck.png";
+import Img1 from "@/public/images/img1.png";
+import Img2 from "@/public/images/img2.png";
+import Img3 from "@/public/images/img3.png";
+import Img4 from "@/public/images/img4.png";
+import Img5 from "@/public/images/img5.png";
+import Img6 from "@/public/images/img6.png";
 import Truckicon from "@/public/truck.svg";
 import Footer from "@/components/UI/Footer";
 import { useRef } from "react";
+import { SERVICES, SLICK_SETTINGS } from "@/constants";
+import Slider from "react-slick";
 
 const Landing = () => {
   const serviceRef = useRef(null);
   const footerRef = useRef(null);
   const headerRef = useRef(null);
 
-  const SERVICES = [
-    {
-      title: "Logistics",
-      desc: "We help you manage your logistics matter with easy and efficiency.",
-    },
-    {
-      title: "Haulage",
-      desc: "We help you manage your haulage matter with easy and efficiency.",
-    },
-    {
-      title: "Errand",
-      desc: "We help you run errands matter with easy and efficiency.",
-    },
-    {
-      title: "Sales & Supply",
-      desc: "We help you manage your sales and supply matter with easy and efficiency.",
-    },
-  ];
-
   return (
     <>
-      <main className="text-white">
-        {/* header */}
-        <Header
-          serviceRef={serviceRef}
-          footerRef={footerRef}
-          headerRef={headerRef}
-        />
-        <h1 className="text-4xl md:text-7xl lg:text-9xl text-center font-semibold mb-s6 mt-s11">
+      {/* header */}
+      <Header
+        serviceRef={serviceRef}
+        footerRef={footerRef}
+        headerRef={headerRef}
+      />
+      <main className="text-white" ref={headerRef}>
+        <h1 className="text-4xl md:text-7xl lg:text-9xl text-center font-semibold mb-s6 mt-s18">
           Grow your business, we will take care of your
           <span className="text-blue"> Logistics and Haulage</span>
         </h1>
-        <Image src={Truck} alt="Logistics" />
+        <Slider {...SLICK_SETTINGS}>
+          <Image src={Img1} alt="Logistics" />
+          <Image src={Img2} alt="Logistics" />
+          <Image src={Img3} alt="Logistics" />
+          <Image src={Img4} alt="Logistics" />
+          <Image src={Img5} alt="Logistics" />
+          <Image src={Img6} alt="Logistics" />
+        </Slider>
+
         {/* services */}
         <section className="flex mt-s23 lg:flex-row flex-col" ref={serviceRef}>
           <div className="lg:w-2/6 w-full">
             <p className="font-bold text-lg">OUR SERVICES</p>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold mt-s1 mb-s3">
-              <span className="text-blue">Everything</span> is ready to transport
+              <span className="text-blue">Everything</span> is ready to
+              transport
             </h2>
             <p className="text-sm text-pale">
               Our global logistics expertise, advanced supply chain technology &

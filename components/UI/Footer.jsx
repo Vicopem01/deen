@@ -3,7 +3,8 @@ import Facebook from "@/public/facebook.svg";
 import Instagram from "@/public/instagram.svg";
 import Mail from "@/public/mail.svg";
 import Phone from "@/public/phone.svg";
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/logo-white.png";
+import Image from "next/image";
 
 const Footer = ({ footerRef, headerRef, serviceRef }) => {
   return (
@@ -11,8 +12,8 @@ const Footer = ({ footerRef, headerRef, serviceRef }) => {
       <div className="w-[85%] mx-auto">
         <div className="footer-grid mx-auto">
           <div>
-            <p className="logo">
-              <Logo />
+            <p>
+              <Image src={Logo} alt="Logo" width={100} height={100} />
             </p>
             <p className="text-white-200 my-s2">
               We offer you the best Logistics and Haulage services for all your
