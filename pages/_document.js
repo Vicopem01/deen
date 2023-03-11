@@ -13,18 +13,18 @@ export default function Document() {
         <meta property="og:image" content="https://d-lhs.com/summary.png" />
         <meta
           name="og:image:alt"
-          content="Wants to deliver package and needs a logistics and haulage services?"
+          content="Want to deliver package and needs a logistics and haulage services?"
         />
         <meta property="og:site_name" content="D-LHS" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://d-lhs.com/" />
         <meta
           property="og:title"
-          content="Wants to deliver package and needs a logistics and haulage services?"
+          content="Want to deliver package and needs a logistics and haulage services?"
         />
         <meta
           property="og:description"
-          content="Grow your business,  we will take care of your Logistics and Haulage"
+          content="Grow your business, we will take care of your Logistics and Haulage"
         />
         <meta
           name="title"
