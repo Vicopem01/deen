@@ -1,5 +1,5 @@
-import Twitter from "@/public/twitter.svg";
-import Facebook from "@/public/facebook.svg";
+// import Twitter from "@/public/twitter.svg";
+// import Facebook from "@/public/facebook.svg";
 import Instagram from "@/public/instagram.svg";
 import Mail from "@/public/mail.svg";
 import Phone from "@/public/phone.svg";
@@ -49,18 +49,23 @@ const Footer = ({ footerRef, headerRef, serviceRef }) => {
           </div>
           <div>
             <p className="font-semibold text-lg text-white mb-s2">Follow Us</p>
-            <a className="block text-white-100 flex items-center gap-2">
+            {/* <a className="block text-white-100 flex items-center gap-2">
               <Twitter />
               DEEN logistics
-            </a>
-            <a className="block text-white-100 flex items-center my-s2 gap-2">
+            </a> */}
+            <a
+              className="block text-white-100 flex items-center my-s2 gap-2"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/dlhs_1/?igshid=YmMyMTA2M2Y%3D"
+            >
               <Instagram />
               DEEN logistics
             </a>
-            <a className="block text-white-100 flex items-center gap-2">
+            {/* <a className="block text-white-100 flex items-center gap-2">
               <Facebook />
               DEEN logistics
-            </a>
+            </a> */}
           </div>
           <div>
             <p className="font-semibold text-lg text-white mb-s2">Reach Us</p>
@@ -88,8 +93,7 @@ const Footer = ({ footerRef, headerRef, serviceRef }) => {
           </div>
         </div>
         <p className="text-white-200 text-center mt-s13">
-          Copyright © 2023 Deen Logistics and Haulage Services. All rights
-          reserved.
+          Copyright © 2023 D-LHS Services. All rights reserved.
         </p>
       </div>
     </footer>
