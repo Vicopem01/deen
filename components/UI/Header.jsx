@@ -1,5 +1,5 @@
 import Burger from "@/public/hamburger.svg";
-import Logo from "@/public/logo-red.svg";
+import Logo from "@/public/logo.svg";
 
 const Header = ({ serviceRef, footerRef, headerRef }) => {
   return (
@@ -31,7 +31,7 @@ const Header = ({ serviceRef, footerRef, headerRef }) => {
         </button>
         <a
           href="tel:+2349054450082"
-          className="bg-red py-s2 px-s4 rounded-lg ml-s12"
+          className="bg-blue py-s2 px-s4 rounded-lg ml-s12"
         >
           Book a call
         </a>

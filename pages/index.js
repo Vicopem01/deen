@@ -40,7 +40,7 @@ const Landing = () => {
         />
         <h1 className="text-4xl md:text-7xl lg:text-9xl text-center font-semibold mb-s6 mt-s11">
           Grow your business, we will take care of your
-          <span className="text-red"> Logistics and Haulage</span>
+          <span className="text-blue"> Logistics and Haulage</span>
         </h1>
         <Image src={Truck} alt="Logistics" />
         {/* services */}
@@ -48,7 +48,7 @@ const Landing = () => {
           <div className="lg:w-2/6 w-full">
             <p className="font-bold text-lg">OUR SERVICES</p>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold mt-s1 mb-s3">
-              <span className="text-red">Everything</span> is ready to transport
+              <span className="text-blue">Everything</span> is ready to transport
             </h2>
             <p className="text-sm text-pale">
               Our global logistics expertise, advanced supply chain technology &

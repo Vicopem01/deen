@@ -14,11 +14,12 @@ module.exports = {
       black: "#000017",
       white: {
         DEFAULT: "#FFFFFF",
-        100: "#BDBDBD",
+        100: "#EFEFEF",
         200: "#E0E0E0",
       },
       pale: "#BDBDBD",
       red: "#D70601",
+      blue: "#0DB8E3",
       grey: "#292F34",
     },
     fontFamily: {

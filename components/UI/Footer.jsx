@@ -3,15 +3,15 @@ import Facebook from "@/public/facebook.svg";
 import Instagram from "@/public/instagram.svg";
 import Mail from "@/public/mail.svg";
 import Phone from "@/public/phone.svg";
-import Logo from "@/public/logo-white.svg";
+import Logo from "@/public/logo.svg";
 
 const Footer = ({ footerRef, headerRef, serviceRef }) => {
   return (
-    <footer className="bg-red pt-s9 pb-s7" ref={footerRef}>
+    <footer className="bg-blue pt-s9 pb-s7" ref={footerRef}>
       <div className="w-[85%] mx-auto">
         <div className="footer-grid mx-auto">
           <div>
-            <p>
+            <p className="logo">
               <Logo />
             </p>
             <p className="text-white-200 my-s2">
