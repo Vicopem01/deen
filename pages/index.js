@@ -41,30 +41,32 @@ const Landing = () => {
 
         {/* services */}
         <section className="flex mt-s23 lg:flex-row flex-col" ref={serviceRef}>
-          <div className="lg:w-2/6 w-full">
-            <p className="font-bold text-lg">OUR SERVICES</p>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold mt-s1 mb-s3">
-              <span className="text-blue">Everything</span> is ready to
-              transport
-            </h2>
-            <p className="text-sm text-pale">
-              Our global logistics expertise, advanced supply chain technology &
-              customized logistics solutions will help you analyze, develop and
-              implement successful supply chain management strategies from
-              end-to-end
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:w-4/6 lg:ml-s4 w-full lg:mt-0 mt-s4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:ml-s4 lg:mt-0 mt-s4 [&>*:nth-child(4)]:lg:-translate-y-20">
+            <div>
+              <p className="font-bold text-lg">OUR SERVICES</p>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold mt-s1 mb-s2">
+                <span className="text-blue">Everything</span> is ready to
+                transport
+              </h2>
+              <p className="text-sm text-pale">
+                Our global logistics expertise, advanced supply chain technology
+                & customized logistics solutions will help you analyze, develop
+                and implement successful supply chain management strategies from
+                end-to-end
+              </p>
+            </div>
             {SERVICES.map((item, i) => (
               <div
                 key={i}
-                className="text-center flex flex-col items-center bg-grey rounded-xl p-s4"
+                className="text-center bg-grey rounded-xl px-s4 py-s6"
               >
-                <span className="mt-s10">
+                <span className="mt-s6 inline-block mx-auto">
                   <Truckicon />
                 </span>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
+                <h3 className="text-4xl font-semibold mb-s2 mt-s5">
+                  {item.title}
+                </h3>
+                <p className="text-base">{item.desc}</p>
               </div>
             ))}
           </div>
