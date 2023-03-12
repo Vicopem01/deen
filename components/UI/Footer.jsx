@@ -60,7 +60,7 @@ const Footer = ({ footerRef, headerRef, serviceRef }) => {
               href="https://www.instagram.com/dlhs_1/?igshid=YmMyMTA2M2Y%3D"
             >
               <Instagram />
-              DEEN logistics
+              @dlhs_1
             </a>
             {/* <a className="block text-white-100 flex items-center gap-2">
               <Facebook />
@@ -85,10 +85,10 @@ const Footer = ({ footerRef, headerRef, serviceRef }) => {
             </a>
             <a
               className="block text-white-100 flex items-center gap-2"
-              href="mailto:dlog.hauls@gmail.com"
+              href="mailto:info@d-lhs.com"
             >
               <Mail />
-              dlog.hauls@gmail.com
+              info@d-lhs.com
             </a>
           </div>
         </div>
