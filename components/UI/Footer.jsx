@@ -85,10 +85,10 @@ const Footer = ({ footerRef, headerRef, serviceRef }) => {
             </a>
             <a
               className="block text-white-100 flex items-center gap-2"
-              href="mailto:info@d-lhs.com"
+              href="mailto:info@d-lhs.co"
             >
               <Mail />
-              info@d-lhs.com
+              info@d-lhs.co
             </a>
           </div>
         </div>
